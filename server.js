@@ -1,10 +1,16 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const userRoutes = require('./routes/userRoutes');
+const seedUsers = require('./models/userSeedData');
 
 //connecting with mongoose
 mongoose.connect("mongodb://localhost:27017/project")
-    .then(() => console.log('connected successfuly'))
+    .then(() => {
+        console.log('Connected to MongoDB');
+        
+        // Seed sample users into the database
+        seedUsers();
+    })
     .catch(err => console.log("can not connected:", err))
 
 
