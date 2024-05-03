@@ -2,9 +2,8 @@ const User = require('../models/user');
 
 // Sample user data
 const sampleUsers = [
-    { email: 'user1@example.com', password: 'password1', name: 'User One' },
-    { email: 'user2@example.com', password: 'password2', name: 'User Two' },
-    { email: 'user3@example.com', password: 'password3', name: 'User Three' }
+    { email: 'Nour@gmail.com', password: 'Amal', name: 'Amolah' },
+    { email: 'Hadia@gmail.com', password: 'zainb', name: 'Zaynabo' }
 ];
 
 // Function to seed sample users into the database
