@@ -4,6 +4,6 @@ const { logIn } = require('../services/userService');
 
 // Sign-in endpoint
 //router.post('/signin', userController.signIn);
-router.get('/login', logIn);
+router.post('/login', logIn);
 
 module.exports = router;
